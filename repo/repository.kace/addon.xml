@@ -2,9 +2,9 @@
 <addon id="repository.kace" name="Kace Repository" version="1.0.0" provider-name="kace-dev">
     <extension point="xbmc.addon.repository" name="Kace Repository">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/kace-dev/kodi/main/repo/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/kace-dev/kodi/main/repo/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/kace-dev/kodi/main/repo</datadir>
+            <info compressed="false">https://kace-dev.github.io/kodi/repo/addons.xml</info>
+            <checksum>https://kace-dev.github.io/kodi/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://kace-dev.github.io/kodi/repo</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">

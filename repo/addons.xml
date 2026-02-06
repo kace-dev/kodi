@@ -26,6 +26,7 @@
 		</assets>
     </extension>
 </addon>
+
 <addon id="skin.osmc" version="21.2.2" name="OSMC Skin" provider-name="OSMC">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
@@ -48,12 +49,13 @@
 		<news>[B]New[/B]- add new DV profile info label[CR][CR][B]Improved[/B][CR]- add new item limits to main menu widgets[CR]- improve rendering of video media flags all over the skin for edge cases[CR]- improve debug overlay[CR][CR][B]Fixed[/B][CR]- fix the date added sort order of main menu widgets</news>
 	</extension>
 </addon>
+
 <addon id="repository.kace" name="Kace Repository" version="1.0.0" provider-name="kace-dev">
     <extension point="xbmc.addon.repository" name="Kace Repository">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/kace-dev/kodi/main/repo/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/kace-dev/kodi/main/repo/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/kace-dev/kodi/main/repo</datadir>
+            <info compressed="false">https://kace-dev.github.io/kodi/repo/addons.xml</info>
+            <checksum>https://kace-dev.github.io/kodi/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://kace-dev.github.io/kodi/repo</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
