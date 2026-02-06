@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.kace" name="Kace Repository" version="1.0.0" provider-name="kace-dev">
+    <extension point="xbmc.addon.repository" name="Kace Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/kace-dev/kodi/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/kace-dev/kodi/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/kace-dev/kodi/main/repo</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Kace Repository - Kodi Addons</summary>
+        <summary lang="en_GB">Kace Repository - Kodi Addons</summary>
+        <description lang="de_DE">Repository fuer xShip und weitere Addons von kace-dev.</description>
+        <description lang="en_GB">Repository for xShip and other addons by kace-dev.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.xship" version="2026.01.18" name="[B]xShip[/B]" provider-name="Michaz">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.download-m3u8" optional="true"/>
+        <import addon="script.module.six"/>
+        <import addon="script.module.pyaes"/>
+        <import addon="script.module.infotagger"/>
+        <import addon="script.module.resolveurl" version="5.1.100"/>
+        <!-- for remote debug -->
+        <import addon="script.module.pydevd" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">xShip: Der Fake</summary>
+        <summary lang="en_GB">xShip: The Fake</summary>
+        <assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<banner>resources/media/banner.png</banner>
+		</assets>
+    </extension>
+</addon>
+<addon id="skin.osmc" version="21.2.2" name="OSMC Skin" provider-name="OSMC">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0"/>
+		<import addon="script.skinshortcuts" version="2.0.3" optional="true"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1.00" debugging="false">
+		<!-- <res width="2560" height="1080" aspect="21:9" default="true" folder="xml" /> -->
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<!-- <res width="2560" height="1440" aspect="16:9" default="true" folder="xml" /> -->
+		<!-- <res width="1440" height="1080" aspect="4:3" default="true" folder="xml" /> -->
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">The default skin for OSMC.</summary>
+		<description lang="en">Original skin: Andy Morton[CR]Original design: Simon Brunton[CR]Skinner: Julian Michel</description>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+		<news>[B]New[/B]- add new DV profile info label[CR][CR][B]Improved[/B][CR]- add new item limits to main menu widgets[CR]- improve rendering of video media flags all over the skin for edge cases[CR]- improve debug overlay[CR][CR][B]Fixed[/B][CR]- fix the date added sort order of main menu widgets</news>
+	</extension>
+</addon>
+<addon id="repository.kace" name="Kace Repository" version="1.0.0" provider-name="kace-dev">
+    <extension point="xbmc.addon.repository" name="Kace Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/kace-dev/kodi/main/repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/kace-dev/kodi/main/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/kace-dev/kodi/main/repo</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="de_DE">Kace Repository - Kodi Addons</summary>
+        <summary lang="en_GB">Kace Repository - Kodi Addons</summary>
+        <description lang="de_DE">Repository fuer xShip und weitere Addons von kace-dev.</description>
+        <description lang="en_GB">Repository for xShip and other addons by kace-dev.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>
